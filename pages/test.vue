@@ -14,13 +14,17 @@ export default Vue.extend({
   }),
   created () {
     this.$nextTick(() => {
+      // @ts-ignore
       this.viewer = new Gokz.ReplayViewer(this.$refs.viewerDiv);
       const viewer = this.viewer;
+      // @ts-ignore
       viewer.mapBaseUrl = '//static.ruto.sh/resources/maps';
 
       const replayUrl = 'http://localhost:5000/api/replay/2';
       console.log(replayUrl);
+      // @ts-ignore
       viewer.loadReplay(replayUrl);
+      // @ts-ignore
       viewer.animate();
     });
   }
