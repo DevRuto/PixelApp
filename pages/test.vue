@@ -10,21 +10,17 @@
 import Vue from 'vue';
 export default Vue.extend({
   data: () => ({
-    viewer: {}
+    viewer: {} as any
   }),
   created () {
     this.$nextTick(() => {
-      // @ts-ignore
       this.viewer = new Gokz.ReplayViewer(this.$refs.viewerDiv);
       const viewer = this.viewer;
-      // @ts-ignore
       viewer.mapBaseUrl = '//static.ruto.sh/resources/maps';
 
       const replayUrl = '/replay/kz_11342_skz.replay';
       console.log(replayUrl);
-      // @ts-ignore
       viewer.loadReplay(replayUrl);
-      // @ts-ignore
       viewer.animate();
     });
   }

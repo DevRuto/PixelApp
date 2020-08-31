@@ -9,6 +9,7 @@
       "DOM"
     ],
     "esModuleInterop": true,
+    "noImplicitAny": false,
     "allowJs": true,
     "sourceMap": true,
     "strict": true,
