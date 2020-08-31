@@ -20,6 +20,6 @@ module.exports = {
     ]
   },
   future: {
-    removeDeprecatedGapUtilities: true,
+    removeDeprecatedGapUtilities: true
   }
-}
+};
