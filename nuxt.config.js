@@ -25,9 +25,9 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
-      { src: './js/facepunch.webgame.js' },
-      { src: './js/sourceutils.js' },
-      { src: './js/replayviewer.js' }
+      { src: '/js/facepunch.webgame.js' },
+      { src: '/js/sourceutils.js' },
+      { src: '/js/replayviewer.js' }
     ]
   },
   /*
@@ -71,8 +71,5 @@ export default {
   ** See https://nuxtjs.org/api/configuration-build/
   */
   build: {
-  },
-  router: {
-    base: '/PixelApp/'
   }
 };
