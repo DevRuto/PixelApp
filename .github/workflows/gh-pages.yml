@@ -6,9 +6,9 @@ on:
 
 jobs:
   build-deploy:
-    
+
     runs-on: ubuntu-latest
-    
+
     steps:
     - uses: actions/checkout@v2
       with:
@@ -23,8 +23,8 @@ jobs:
     - run: yarn generate
 
     - name: Deploy
-      uses: peaceiris/actions-gh-pages@v2.5.0
+      uses: JamesIves/github-pages-deploy-action@3.5.9
       env:
-        ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-        PUBLISH_BRANCH: gh-pages
-        PUBLISH_DIR: ./dist
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: dist
