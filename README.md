@@ -1,4 +1,7 @@
-# pixelapp
+# Pixel APP
+> Web Interface for Pixel API for GOKZ replays
+
+![GitHub pages](https://github.com/devruto/pixelapp/workflows/gh-pages/badge.svg)
 
 ## Build Setup
 
