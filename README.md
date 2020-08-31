@@ -3,6 +3,8 @@
 
 ![GitHub pages](https://github.com/devruto/pixelapp/workflows/gh-pages/badge.svg)
 
+GitHub pages: https://devruto.github.io/PixelApp
+
 ## Build Setup
 
 ```bash
