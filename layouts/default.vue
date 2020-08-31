@@ -14,12 +14,15 @@
       </div>
       <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto" :class="{hidden: menuActive}">
         <div class="text-sm lg:flex-grow">
-          <a href="/" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+          <n-link to="/" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
             Home
-          </a>
-          <a href="/test" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+          </n-link>
+          <n-link to="/maps" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+            Maps
+          </n-link>
+          <n-link to="/test" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
             Test
-          </a>
+          </n-link>
         </div>
       </div>
     </nav>

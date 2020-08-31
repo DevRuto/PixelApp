@@ -1,4 +1,3 @@
-
 export default {
   /*
   ** Nuxt rendering mode
@@ -10,6 +9,9 @@ export default {
   ** See https://nuxtjs.org/api/configuration-target
   */
   target: 'static',
+  router: {
+    base: '/PixelApp/'
+  },
   /*
   ** Headers of the page
   ** See https://nuxtjs.org/api/configuration-head
@@ -25,9 +27,9 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
-      { src: '/js/facepunch.webgame.js' },
-      { src: '/js/sourceutils.js' },
-      { src: '/js/replayviewer.js' }
+      { src: 'js/facepunch.webgame.js' },
+      { src: 'js/sourceutils.js' },
+      { src: 'js/replayviewer.js' }
     ]
   },
   /*

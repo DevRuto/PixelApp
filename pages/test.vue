@@ -18,7 +18,7 @@ export default Vue.extend({
       const viewer = this.viewer;
       viewer.mapBaseUrl = '//static.ruto.sh/resources/maps';
 
-      const replayUrl = '/replay/kz_11342_skz.replay';
+      const replayUrl = 'replay/kz_11342_skz.replay';
       console.log(replayUrl);
       viewer.loadReplay(replayUrl);
       viewer.animate();
