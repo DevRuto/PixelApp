@@ -23,6 +23,11 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [
+      { src: '/js/facepunch.webgame.js' },
+      { src: '/js/sourceutils.js' },
+      { src: '/js/replayviewer.js' }
     ]
   },
   /*
