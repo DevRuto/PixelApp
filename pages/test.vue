@@ -20,7 +20,7 @@ export default Vue.extend({
       // @ts-ignore
       viewer.mapBaseUrl = '//static.ruto.sh/resources/maps';
 
-      const replayUrl = 'http://localhost:5000/api/replay/2';
+      const replayUrl = './replay/kz_11342_skz.replay';
       console.log(replayUrl);
       // @ts-ignore
       viewer.loadReplay(replayUrl);
