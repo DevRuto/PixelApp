@@ -1,0 +1,30 @@
+name: gh-pages
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build-deploy:
+    
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+      with:
+          persist-credentials: false
+    - name: Setup Node
+      uses: actions/setup-node@v2-beta
+      with:
+        node-version: '14'
+
+    - run: yarn install
+
+    - run: yarn generate
+
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v2.5.0
+      env:
+        ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        PUBLISH_BRANCH: gh-pages
+        PUBLISH_DIR: ./dist
