@@ -14,7 +14,7 @@ export default Vue.extend({
   }),
   created () {
     this.$nextTick(() => {
-      this.viewer = new Gokz.ReplayViewer(this.$refs.viewerDiv);
+      this.viewer = new Gokz.ReplayViewer(this.$refs.viewerDiv); // eslint-disable-line no-undef
       const viewer = this.viewer;
       viewer.mapBaseUrl = '//static.ruto.sh/resources/maps';
 
